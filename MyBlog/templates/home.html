@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>My Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/static/home.css">
+<style>
+    .mySlides {
+        display: none
+    }
+
+    .demo {
+        cursor: pointer
+    }
+</style>
+
+<body>
+<div>
+    <div align="center" class="text_head">SOLITUDE</div>
+    <div style="width: 100%">
+        <div class="float_right ">Deepak Chaudhary</div>
+        <div class="float_left ">Menu</div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="w3-content" style="max-width:600px">
+    <img class="mySlides w3-animate-fading" src="/static/img_forest.jpeg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="/static/img_fjords.jpeg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="/static/img_mountains.jpeg" style="width:100%">
+
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+    }
+</script>
+
+</body>
+</html>
