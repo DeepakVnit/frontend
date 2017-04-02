@@ -24,11 +24,11 @@ h2 {
 
 .float_left{
             float:left;
-            margin: 10px;
+            margin: 5px;
         }
 .float_right{
             float:right;
-            margin: 10px;
+            margin: 5px;
         }
 .clear{
             clear:both;
