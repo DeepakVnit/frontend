@@ -2,5 +2,5 @@ from django.db import models
 
 # Create your models here.
 
-class MessageQuerySet(models.QuerySet):
-    pass
+class Images(models.Model):
+    imageName = models.CharField(max_length=30)

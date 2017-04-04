@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanks</title>
+    <link rel="stylesheet" type="text/css" href="/static/home.css">
+</head>
+<body>
+<div class="form-style-6" align="center">
+    {% if error %}
+        <div class="text-danger">Please correct the error below.</div>
+        {{ error }}
+    {% else %}
+        <table>
+            Thanks! Your form has been submitted!
+            <p>status {{ status }}</p>
+        </table>
+    {% endif %}
+</div>
+</body>
+</html>

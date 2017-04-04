@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>{{ title }} </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/static/home.css">
+<body style="background-color: lightblue">
+
+<div class="form-style-6">
+
+    <h1>Please Fill out Below Forms</h1>
+
+    <form method="post" action="/thanks/">
+        {% csrf_token %}
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>EMI Amount</label>
+                <input type="number" name="EMI_Amount" placeholder="Enter value" autofocus required>
+            </div>
+            <div class="input_width_right">
+                <label>Mobile First Digit</label>
+                <input type="number" min="1" max="9" name="mobile_first_digit" placeholder="Enter value" autofocus required>
+            </div>
+        </div>
+
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>Age</label>
+                <input type="number" min="10" max="150" name="Age" placeholder="Enter value" autofocus required>
+            </div>
+            <div class="input_width_right">
+                <label>age panage</label>
+                <input type="text" name="age_panage" placeholder="Enter value" autofocus required>
+            </div>
+        </div>
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>Has PAN:</label>
+                <input type="number" min="0" max="1" step="1" name="HasPAN" placeholder="Enter value" autofocus required>
+            </div>
+            <div class="input_width_right">
+                <label>Has Passport:</label>
+                <input type="number" min="0" max="1" step="1" name="Has_Passport" placeholder="Enter value" autofocus required>
+            </div>
+        </div>
+
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>Has Voter:</label>
+                <input type="number" min="0" max="1" step="1" name="Has_Voter" placeholder="Enter value" autofocus required>
+            </div>
+            <div class="input_width_right">
+                <label>Has DL:</label>
+                <input type="number" min="0" max="1" step="1" name="Has_DL" placeholder="Enter value" autofocus required>
+            </div>
+        </div>
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>Hour:</label>
+                <input type="number" min="0" max="24" step="1" name="hour" placeholder="Enter value" autofocus required>
+            </div>
+            <div class="input_width_right">
+                <label>Is Weekend:</label>
+                <input type="number" min="0" max="1" step="1" name="is_weekend" placeholder="Enter value" autofocus required>
+            </div>
+        </div>
+
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>AG PANEL:</label>
+                <input type="number" min="0" max="1" step="1" name="AG_PANEL" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+            <div class="input_width_right">
+                <label>AG REFRIGERATOR:</label>
+                <input type="number" min="0" max="1" step="1" name="AG_REFRIGERATOR" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+        </div>
+
+
+        <!-- -->
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>AG AC:</label>
+                <input type="number" min="0" max="1" step="1" name="AG_AC" placeholder="Enter value" autocomplete="on"
+                       required/>
+            </div>
+            <div class="input_width_right">
+                <label>AG WASH:</label>
+                <input type="number" min="0" max="1" step="1" name="AG_WASH" placeholder="Enter value" autocomplete="on"
+                       required/>
+            </div>
+        </div>
+
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>AG SMARTPHONE:</label>
+                <input type="number" min="0" max="1" step="1" name="AG_SMARTPHONE" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+            <div class="input_width_right">
+                <label>AG VANILLA:</label>
+                <input type="number" min="0" max="1" step="1" name="AG_VANILLA" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+        </div>
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>IS SALARIED:</label>
+                <input type="number" min="0" max="1" step="1" name="is_salaried" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+            <div class="input_width_right">
+                <label>Address Commas:</label>
+                <input type="number" min="0" max="20" step="1" name="Address_Commas" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+        </div>
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>Store Age:</label>
+                <input type="number" min="-100" max="100" step="1" name="Store_Age" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+            <div class="input_width_right">
+                <label>Minute Since Last Application:</label>
+                <input type="text" name="Minute_Since_Last_Application" placeholder="Enter value" autocomplete="on"
+                       required/>
+            </div>
+        </div>
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>Minute Since Last Application Store:</label>
+                <input type="text" name="Minute_Since_Last_Application_Store" placeholder="Enter value"
+                       autocomplete="on"
+                       required/>
+            </div>
+            <div class="input_width_right">
+                <label>Dist2:</label>
+                <input type="text" name="dist2" placeholder="Enter value" autocomplete="on" required/>
+            </div>
+        </div>
+
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>LTV__:</label>
+                <input type="text" name="LTV__" placeholder="Enter value" autocomplete="on" required/>
+            </div>
+            <div class="input_width_right">
+                <label style="padding-bottom: 10px">G rating:</label>
+                <input type="text" name="g_rating" placeholder="Enter value" autocomplete="on" required/>
+            </div>
+        </div>
+
+
+        <div style="width: 100%">
+            <div class="input_width_left">
+                <label>LFR_R:</label>
+                <input type="number" min="0" max="1" step="1" name="LFR_R" placeholder="Enter value" autocomplete="on"
+                       required/>
+            </div>
+            <div class="input_width_right">
+                <label>LFR_O:</label>
+                <input type="number" min="0" max="1" step="1" name="LFR_O" placeholder="Enter value" autocomplete="on"
+                       required/>
+            </div>
+        </div>
+
+
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
+</body>
+</html>

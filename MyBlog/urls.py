@@ -4,5 +4,6 @@ from django.conf.urls import include, url
 import views
 
 urlpatterns = [
-    url(r'home/',views.home),
+    url(r'^home/$',views.home),
+    url(r'^form/$',views.formpage),
 ]
