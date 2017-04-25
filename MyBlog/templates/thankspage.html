@@ -5,17 +5,76 @@
     <title>Thanks</title>
     <link rel="stylesheet" type="text/css" href="/static/home.css">
 </head>
-<body>
-<div class="form-style-6" align="center">
-    {% if error %}
-        <div class="text-danger">Please correct the error below.</div>
-        {{ error }}
-    {% else %}
-        <table>
-            Thanks! Your form has been submitted!
-            <p>status {{ status }}</p>
-        </table>
-    {% endif %}
+<body bgcolor="#87cefa">
+<div class="card_view">
+    <div class="logo_class">
+        <img width="140" hight="150" src="/static/img_fjords.jpeg">
+    </div>
+
+    <div class="my_navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
 </div>
+
+<div class="card_view1">
+    <div style="position: static">
+        <div style="float: left">
+            Design and Build Applications
+        </div>
+        <div style="float: right">
+            Email: hello@dabapps.com
+            Tel: 01273 208 222
+        </div>
+    </div>
+
+    <div class="w3-content" style="max-width:600px; padding-top: 2px">
+        <img height="400" class="mySlides w3-animate-fading" src="/static/1.png" style="width:100%">
+        <img height="400" class="mySlides w3-animate-fading" src="/static/2.png" style="width:100%">
+        <img height="400" class="mySlides w3-animate-fading" src="/static/3.png" style="width:100%">
+    </div>
+</div>
+ <div class="card_view2">
+    <div style="float: left">
+        <div style="font-size: medium;color: darkred"> Success Stories</div>
+        <div style="font-size: smaller;width: 400px">We've helped many entrepreneurs, established companies, institutions and agencies realise their ideas.</div>
+        <div style="padding-top:5px;border-left:3px solid grey; width: 400px ">" The DabApps team were extremely professional and helpful, guiding us through the various development stages so we understood each process, all whilst working to our very tight timeframe. "</div>
+        <div style="width: 200px;text-align: center;color: firebrick">--Agency Rush</div>
+
+        <div style="padding-top:5px;border-left:3px solid grey; width: 400px ">" One of DabApps' strengths is the experience and knowledge of the management team. They quickly understood the complexities of our industry while contributing specialist knowledge - this has been key to our strategy and speed at which we have developed. "</div>
+        <div style="width: 200px;text-align: center;color: firebrick">--Agency Rush</div>
+    </div>
+
+    <div style="float: right">
+{#        <iframe src="http://www.youtube.com/embed/W7qWa52k-nE"#}
+{#            width="560" height="315" frameborder="0" allowfullscreen></iframe>#}
+        <object data="http://www.youtube.com/embed/W7qWa52k-nE"
+                width="560" height="315"></object>
+    </div>
+
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000);
+    }
+</script>
 </body>
 </html>

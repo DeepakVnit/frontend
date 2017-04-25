@@ -13,6 +13,89 @@
     text-align: center;
 }
 
+
+.box_size {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid darkred;
+    height: auto;
+    margin: 0;
+}
+
+.logo_class
+{
+    width: 240px;
+    height: 130px;
+    top: -2px;
+    float: left;
+}
+
+.card_view{
+    border: 1px;
+    border-color: #009688;
+    padding: 5px;
+    margin: 1px;
+    background-color: ghostwhite;
+    height: 100px;
+}
+
+.card_view1{
+    border: 1px;
+    border-color: #009688;
+    padding: 5px;
+    margin: 1px;
+    background-color: ghostwhite;
+    height: 400px;
+}
+
+.card_view2{
+    border: 1px;
+    border-color: #009688;
+    padding: 5px;
+    margin: 1px;
+    background-color: ghostwhite;
+    height: 400px;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.my_navbar{
+    float: right;
+    padding-top:35px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
 .input_width_left{
     width: 45%;
     float: left;
@@ -55,6 +138,24 @@
     margin-top: auto;
     float: left;
     background-color: #2EBC99;
+}
+.above_footer_class{
+    background-color: ghostwhite;
+    height: 150px;
+    width: 100%;
+    position: static;
+    text-align: center;
+}
+
+
+.footer_class{
+    background-color: ghostwhite;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    font-size: smaller;
+    text-align: center;
+    padding-top: 0;
 }
 
 

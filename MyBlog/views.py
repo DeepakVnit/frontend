@@ -25,7 +25,7 @@ def formpage(request):
         var = "Deepak"
 
         context ={'title':var}
-        template = 'formpage.html'
+        template = 'thankspage.html'
         img.imageName = "photo.png"
         img.save()
     except Exception as ex:
